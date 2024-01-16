@@ -1,0 +1,2 @@
+name: READONLY_ROOTFS_OVERLAY
+desc: External tree to demonstrate use of dracut and readonly-rootfs-overlay
