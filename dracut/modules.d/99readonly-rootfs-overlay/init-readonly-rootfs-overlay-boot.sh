@@ -201,7 +201,7 @@ mount_and_boot() {
 	cd $ROOT_MOUNT
 
 	# switch to actual init in the overlay root file system
-	exec chroot $ROOT_MOUNT $INIT ||
+	exec switch_root $ROOT_MOUNT $INIT ||
 		fatal "Couldn't chroot, dropping to shell"
 }
 
